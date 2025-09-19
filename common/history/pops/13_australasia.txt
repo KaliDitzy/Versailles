@@ -1,0 +1,178 @@
+﻿POPS = {
+	s:STATE_NEW_SOUTH_WALES = {
+		region_state:NSW = {
+			create_pop = {
+				culture = aborigine
+				size = 111896
+			}
+			create_pop = {
+				culture = australian
+				size = 179501
+			}
+			create_pop = {
+				culture = irish
+				size = 28469
+			}
+		}
+	}
+	s:STATE_VICTORIA = {
+		region_state:NSW = {
+			create_pop = {
+				culture = aborigine
+				size = 55094
+			}
+			create_pop = {
+				culture = australian
+				size = 43689
+			}
+		}
+	}
+
+	s:STATE_TASMANIA = {
+		region_state:TAS = {
+			create_pop = {
+				culture = aborigine
+				size = 354
+			}
+			create_pop = {
+				culture = australian
+				size = 72944
+			}
+		}
+	}
+	s:STATE_QUEENSLAND = {
+		region_state:NSW = {
+			create_pop = {
+				culture = aborigine
+				size = 104814
+			}
+			create_pop = {
+				culture = australian
+				size = 7082
+			}
+		}
+	}
+	s:STATE_SOUTH_AUSTRALIA = {
+		region_state:SAS = {
+			create_pop = {
+				culture = australian
+				size = 18590
+			}
+			create_pop = {
+				culture = aborigine
+				size = 31869
+			}
+		}
+		region_state:KAU = {
+			create_pop = {
+				culture = australian
+				size = 531
+			}
+			create_pop = {
+				culture = aborigine
+				size = 90295
+			}
+		}
+		region_state:WTI = {
+			create_pop = {
+				culture = aborigine
+				#size = 7082 # historical increased for gameplay
+				size = 22131
+			}
+		}
+	}
+	s:STATE_WESTERN_AUSTRALIA = {
+		region_state:WAS = {
+			create_pop = {
+				culture = aborigine
+				size = 91103
+			}
+			create_pop = {
+				culture = australian
+				size = 5318
+			}
+		}
+		region_state:NNG = {
+			create_pop = {
+				culture = aborigine
+				size = 37357
+			}
+		}
+		region_state:WTI = {
+			create_pop = {
+				culture = aborigine
+				#size = 7159 # historical increased for gameplay
+				size = 22131
+			}
+		}
+		region_state:MRN = {
+			create_pop = {
+				culture = aborigine
+				#size = 3541 # historical increased for gameplay
+				size = 17705
+			}
+		}
+	}
+	s:STATE_NORTHERN_TERRITORY = {
+		region_state:NSW = {
+			create_pop = {
+				culture = aborigine
+				size = 51344
+			}
+		}
+		region_state:WTI = {
+			create_pop = {
+				culture = aborigine
+				#size = 4964 #historical increased for gameplay
+				size = 22131
+			}
+		}
+	}
+	s:STATE_NORTH_ISLAND = {
+		region_state:UNT = {
+			create_pop = {
+				culture = maori
+				religion = protestant
+				size = 53115
+			}
+			create_pop = {
+				culture = maori
+				size = 44262
+			}
+		}
+		region_state:NSW = {
+			create_pop = {
+				culture = maori
+				size = 8852
+			}
+			create_pop = {
+				culture = australian
+				size = 1777
+			}
+		}
+		region_state:NTO = {
+			create_pop = {
+				culture = maori
+				size = 56656
+			}
+		}
+	}
+	s:STATE_SOUTH_ISLAND = {
+		region_state:NTO = {
+			create_pop = {
+				culture = australian
+				size = 757
+			}
+			create_pop = {
+				culture = maori
+				size = 21246
+			}
+		}
+		region_state:NTU = {
+			create_pop = {
+				culture = maori
+				size = 113312
+			}
+		}
+	}
+}

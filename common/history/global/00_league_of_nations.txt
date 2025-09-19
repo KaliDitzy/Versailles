@@ -1,0 +1,35 @@
+GLOBAL = {
+    c:USA ?= {
+        set_variable = {
+            name = lon_member
+            value = yes
+        }
+    }
+    c:BEL ?= {
+        set_variable = {
+            name = lon_member
+            value = yes
+        }
+    }
+    c:GBR ?= {
+        set_variable = {
+            name = lon_member
+            value = yes
+        }
+    }
+    c:FRA ?= {
+        set_variable = {
+            name = lon_member
+            value = yes
+        }
+    }
+    c:GER ?= {
+        set_variable = {
+            name = lon_member
+            value = yes
+        }
+    }
+    every_country = {
+        add_journal_entry = { type = league_of_nations_entry }
+    }
+}

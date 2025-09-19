@@ -1,0 +1,22 @@
+﻿DIPLOMACY = {
+	c:GER ?= {
+		set_relations = { country = c:GBR value = -30 }
+		set_relations = { country = c:FRA value = -30 }
+		set_relations = { country = c:BEL value = -15 }
+		
+		set_relations = { country = c:AUS value = 30 }
+	}
+	c:GBR ?= {
+		set_relations = { country = c:GER value = -15 }
+		set_relations = { country = c:FRA value = 30 }
+		set_relations = { country = c:BEL value = 30 }
+	}
+	c:FRA ?= {
+		set_relations = { country = c:GER value = -30 }
+		set_relations = { country = c:GBR value = 30 }
+		set_relations = { country = c:BEL value = 15 }
+	}
+	c:AUS ?= {
+		set_relations = { country = c:GER value = 30 }
+	}
+}

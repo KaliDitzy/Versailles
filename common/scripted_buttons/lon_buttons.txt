@@ -1,0 +1,201 @@
+lon_withdraw = {
+	name = "button_lon_withdraw"
+	desc = "button_lon_withdraw_desc"
+
+	visible = { has_variable = lon_member }
+
+	possible = {
+		NOT = { has_global_variable = joining_lon } #prevent edge cases when someone's applying for LoN
+	}
+	#Country scope
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		remove_variable = lon_member
+	}
+}
+lon_join = {
+	name = "button_lon_join"
+	desc = "button_lon_join_desc"
+
+	visible = {
+		NOT = { has_variable = lon_member }
+	}
+
+	possible = {
+		NOT = { has_global_variable = joining_lon }
+		NOT = { has_variable = lon_applicant_votes }
+	}
+
+	#Country scope
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		set_global_variable = joining_lon
+		set_variable = {
+			name = lon_applicant_votes
+			value = 0
+		}
+		#every_country = {
+		#	limit = { has_variable = lon_member }
+		#	add_journal_entry = {
+		#		type = lon_join_vote
+		#		target = prev
+		#	}
+		#}
+        trigger_event = {
+            id = technical_events.1
+            days = 1
+        }
+	}
+}
+lon_invoke_article_11 = {
+	name = "button_lon_invoke_article_11"
+	desc = "button_lon_invoke_article_11_desc"
+
+	visible = {
+		has_variable = lon_member
+	}
+
+	possible = {
+		# There's gonna be like 200+ countries at any given time but probably not even
+		# like 5 diplo plays at the same time so let's iterate over diplo plays instead
+		custom_tooltip = {
+			text = lon_member_in_defensive_war
+			any_diplomatic_play = {
+				# Initiator isn't in the LON
+				# those savages!
+				initiator = {
+					NOT = { has_variable = lon_member }
+				}
+
+				# They're attacking somebody in the LON
+				OR = {
+					target = { # Target is an LON member
+						has_variable = lon_member
+					}
+					any_scope_target_ally = { # An LON member is backing the target
+						has_variable = lon_member
+					}
+				}
+			}
+		}
+	}
+
+	#Country scope
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+	}
+}
+lon_invoke_article_16 = {
+	name = "button_lon_invoke_article_16"
+	desc = "button_lon_invoke_article_16_desc"
+
+	visible = {
+		has_variable = lon_member
+	}
+
+	possible = {
+		# There's gonna be like 200+ countries at any given time but probably not even
+		# like 5 diplo plays at the same time so let's iterate over diplo plays instead
+		custom_tooltip = {
+			text = lon_member_in_offensive_war
+			any_diplomatic_play = {
+				# Initiator isn't in the LON
+				# those savages!
+				initiator = {
+					OR = {
+						has_variable = lon_member
+						any_scope_target_ally = { # An LON member is backing the target
+							has_variable = lon_member
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#Country scope
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+	}
+}
+
+lon_join_vote_yay = {
+	name = "button_lon_join_vote_yay"
+	desc = "button_lon_join_vote_yay_desc"
+
+	possible = {
+		NOT = { has_variable = lon_join_vote_approved }
+		scope:target = {
+			has_variable = lon_applicant_votes
+		}
+	}
+
+	#Country scope
+	ai_chance = {
+		value = 100
+		if = {
+			limit = {
+				#opinion or something
+				always = yes #testing purposes
+			}
+			add = 1
+			# etc
+		}
+	}
+
+	effect = {
+		set_variable = lon_join_vote_approved
+		scope:target = {
+			change_variable = {
+				name = lon_applicant_votes
+				add = 1
+			}
+		}
+	}
+}
+lon_join_vote_nay = {
+	name = "button_lon_join_vote_nay"
+	desc = "button_lon_join_vote_nay_desc"
+
+	possible = {
+		has_variable = lon_join_vote_approved
+		scope:target = {
+			has_variable = lon_applicant_votes
+		}
+	}
+
+	#Country scope
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				#opinion or something
+				always = no #testing purposes
+			}
+			add = 1000
+			# etc
+		}
+	}
+
+	effect = {
+		remove_variable = lon_join_vote_approved
+		scope:target = {
+			change_variable = {
+				name = lon_applicant_votes
+				subtract = 1
+			}
+		}
+	}
+}

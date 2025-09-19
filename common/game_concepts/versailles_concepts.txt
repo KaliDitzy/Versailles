@@ -1,0 +1,3 @@
+concept_great_war = {}
+concept_treaty_of_versailles = {}
+concept_league_of_nations = {}

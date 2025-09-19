@@ -1,0 +1,13 @@
+﻿l_english:
+  nazi_germany: "Nazi Agenda"
+  GER_anschluss: "The Anschluss"
+  GER_anschluss_reason: "TBD"
+
+  treaty_of_versailles: "Treaty of Versailles"
+  loser_versailles_status: "Our Obligations"
+  loser_versailles_status_reason: "TBD"
+  victor_versailles_status: "German Obligations"
+  victor_versailles_status_reason: "TBD"
+
+ league_of_nations_entry: "League of Nations"
+ lon_join_vote: "[SCOPE.sCountry('target').GetAdjectiveNoFormatting] Membership"

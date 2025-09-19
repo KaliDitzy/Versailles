@@ -1,0 +1,5 @@
+﻿treaty_of_versailles = {}
+
+nazi_germany = {}
+
+international_organizations = {}

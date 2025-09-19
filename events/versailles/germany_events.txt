@@ -1,0 +1,62 @@
+namespace = anschluss
+
+anschluss.1 = { # germany demands annexation
+	type = country_event
+	event_image = {
+		video = "middleeast_courtroom_upheaval"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	title = anschluss.1.t
+	desc = anschluss.1.d
+	flavor = anschluss.1.f
+
+	duration = 3
+
+	option = {
+		name = anschluss.1.a
+		default_option = yes
+
+		c:GER = {
+			create_diplomatic_play = {
+				name = dp_anschluss
+				escalation = 50
+				target_country = c:AUS
+				type = dp_annex_war
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = {
+		name = anschluss.1.b
+
+		c:GER = {
+			create_diplomatic_pact = {
+				country = c:AUS
+				type = puppet
+			}
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+
+	option = {
+		name = anschluss.1.c
+
+		c:GER = {
+			annex_with_incorporation = c:AUS
+		}
+
+		ai_chance = {
+			base = 50
+		}
+	}
+}

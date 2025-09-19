@@ -1,0 +1,154 @@
+league_of_nations_entry = {
+    group = international_organizations
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+    scripted_button = lon_withdraw
+    scripted_button = lon_join
+    scripted_button = lon_invoke_article_11
+    scripted_button = lon_invoke_article_16
+
+    invalid = {
+        any_country = {
+            has_variable = lon_collapsed
+        }
+    }
+
+    on_monthly_pulse = {
+        effect = {
+            every_country = {
+                add_journal_entry = { type = league_of_nations_entry }
+            }
+        }
+    }
+
+    can_deactivate = no
+    should_be_pinned_by_default = yes
+}
+
+lon_join_vote = {
+    group = international_organizations
+
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+    scripted_button = lon_join_vote_yay
+    scripted_button = lon_join_vote_nay
+
+    invalid = {
+        OR = {
+            var:lon_member = no
+            scope:target = {
+                OR = {
+                    var:joining_lon = no
+                    var:lon_member = yes
+                }
+            }
+        }
+    }
+    on_invalid = {
+        every_country = {
+            limit = {
+                var:lon_member = yes
+            }
+            set_variable = {
+                name = lon_join_vote_approved
+                value = no
+            }
+        }
+    }
+
+    complete = { scope:target = { var:lon_approval_rate >= 0.66 } }
+    on_complete = {
+        scope:target = {
+            set_variable = {
+                name = joining_lon
+                value = no
+            }
+            set_variable = {
+                name = lon_member
+                value = yes
+            }
+        }
+        every_country = {
+            limit = {
+                var:lon_member = yes
+            }
+            set_variable = {
+                name = lon_join_vote_approved
+                value = no
+            }
+        }
+    }
+    timeout = 100
+    on_timeout = {
+        scope:target = {
+            set_variable = {
+                name = joining_lon
+                value = no
+            }
+        }
+        every_country = {
+            limit = {
+                var:lon_member = yes
+            }
+            set_variable = {
+                name = lon_join_vote_approved
+                value = no
+            }
+        }
+    }
+
+    on_weekly_pulse = {
+        effect = {
+            scope:target = {
+                set_variable = {
+                    name = lon_member_count
+                    value = 0
+                }
+                set_variable = {
+                    name = lon_member_approved
+                    value = 0
+                }
+                every_country = {
+                    limit = {
+                        var:lon_member = yes
+                    }
+                    prev = { change_variable = {
+                        name = lon_member_count
+                        add = 1
+                    } }
+                    if = {
+                        limit = {
+                            var:lon_join_vote_approved = yes
+                        }
+                        prev = { change_variable = {
+                            name = lon_member_approved
+                            add = 1
+                        } }
+                    }
+                }
+                set_variable = {
+                    name = lon_approval_rate
+                    value = var:lon_member_approved
+                }
+                change_variable = {
+                    name = lon_approval_rate
+                    divide = var:lon_member_count
+                }
+            }
+        }
+    }
+
+    progressbar = yes
+    current_value = {
+        value = 0
+        scope:target = { add = var:lon_approval_rate }
+        multiply = 100
+    }
+    goal_add_value = {
+        value = 100
+    }
+
+    can_deactivate = no
+    should_be_pinned_by_default = yes
+}

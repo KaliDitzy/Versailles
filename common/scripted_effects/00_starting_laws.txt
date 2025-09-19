@@ -1,0 +1,151 @@
+effect_starting_generic_politics = {
+	activate_law = law_type:law_parliamentary_republic
+	activate_law = law_type:law_universal_suffrage
+	activate_law = law_type:law_cultural_exclusion
+	activate_law = law_type:law_total_separation
+	activate_law = law_type:law_elected_bureaucrats
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_no_home_affairs
+	
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_per_capita_based_taxation
+	activate_law = law_type:law_commercialized_agriculture
+	activate_law = law_type:law_dedicated_police
+	activate_law = law_type:law_public_schools
+	activate_law = law_type:law_private_health_insurance
+
+	activate_law = law_type:law_right_of_assembly
+	activate_law = law_type:law_regulatory_bodies
+	activate_law = law_type:law_compulsory_primary_school
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_wage_subsidies
+	activate_law = law_type:law_migration_controls
+	activate_law = law_type:law_slavery_banned
+}
+
+effect_starting_absolute_monarchy = {
+	activate_law = law_type:law_monarchy
+	activate_law = law_type:law_autocracy
+	activate_law = law_type:law_racial_segregation
+	activate_law = law_type:law_total_separation
+	activate_law = law_type:law_elected_bureaucrats
+	activate_law = law_type:law_national_militia
+	activate_law = law_type:law_no_home_affairs
+	
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_per_capita_based_taxation
+	activate_law = law_type:law_commercialized_agriculture
+	activate_law = law_type:law_local_police
+	activate_law = law_type:law_public_schools
+	activate_law = law_type:law_private_health_insurance
+
+	activate_law = law_type:law_right_of_assembly
+	activate_law = law_type:law_regulatory_bodies
+	activate_law = law_type:law_compulsory_primary_school
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_wage_subsidies
+	activate_law = law_type:law_migration_controls
+	activate_law = law_type:law_slavery_banned
+}
+effect_starting_constitutional_monarchy = {
+	activate_law = law_type:law_monarchy
+	activate_law = law_type:law_universal_suffrage
+	activate_law = law_type:law_cultural_exclusion
+	activate_law = law_type:law_total_separation
+	activate_law = law_type:law_elected_bureaucrats
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_no_home_affairs
+	
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_per_capita_based_taxation
+	activate_law = law_type:law_commercialized_agriculture
+	activate_law = law_type:law_local_police
+	activate_law = law_type:law_public_schools
+	activate_law = law_type:law_private_health_insurance
+
+	activate_law = law_type:law_right_of_assembly
+	activate_law = law_type:law_regulatory_bodies
+	activate_law = law_type:law_compulsory_primary_school
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_wage_subsidies
+	activate_law = law_type:law_migration_controls
+	activate_law = law_type:law_slavery_banned
+}
+effect_starting_parliamentary_democracy = {
+	activate_law = law_type:law_parliamentary_republic
+	activate_law = law_type:law_universal_suffrage
+	activate_law = law_type:law_cultural_exclusion
+	activate_law = law_type:law_total_separation
+	activate_law = law_type:law_elected_bureaucrats
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_no_home_affairs
+	
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_per_capita_based_taxation
+	activate_law = law_type:law_commercialized_agriculture
+	activate_law = law_type:law_dedicated_police
+	activate_law = law_type:law_public_schools
+	activate_law = law_type:law_private_health_insurance
+
+	activate_law = law_type:law_right_of_assembly
+	activate_law = law_type:law_regulatory_bodies
+	activate_law = law_type:law_compulsory_primary_school
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_wage_subsidies
+	activate_law = law_type:law_migration_controls
+	activate_law = law_type:law_slavery_banned
+}
+effect_starting_presidential_democracy = {
+	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_universal_suffrage
+	activate_law = law_type:law_cultural_exclusion
+	activate_law = law_type:law_total_separation
+	activate_law = law_type:law_elected_bureaucrats
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_no_home_affairs
+	
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_per_capita_based_taxation
+	activate_law = law_type:law_commercialized_agriculture
+	activate_law = law_type:law_dedicated_police
+	activate_law = law_type:law_public_schools
+	activate_law = law_type:law_private_health_insurance
+
+	activate_law = law_type:law_right_of_assembly
+	activate_law = law_type:law_regulatory_bodies
+	activate_law = law_type:law_compulsory_primary_school
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_wage_subsidies
+	activate_law = law_type:law_migration_controls
+	activate_law = law_type:law_slavery_banned
+}
+effect_starting_communist = {
+	activate_law = law_type:law_council_republic
+	activate_law = law_type:law_single_party_state
+	activate_law = law_type:law_racial_segregation
+	activate_law = law_type:law_state_atheism
+	activate_law = law_type:law_appointed_bureaucrats
+	activate_law = law_type:law_mass_conscription
+	activate_law = law_type:law_secret_police
+
+	activate_law = law_type:law_command_economy
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_consumption_based_taxation
+	activate_law = law_type:law_collectivized_agriculture
+	activate_law = law_type:law_dedicated_police
+	activate_law = law_type:law_public_schools
+	activate_law = law_type:law_public_health_insurance
+
+	activate_law = law_type:law_outlawed_dissent
+	activate_law = law_type:law_worker_protections
+	activate_law = law_type:law_compulsory_primary_school
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_poor_laws
+	activate_law = law_type:law_migration_controls
+	activate_law = law_type:law_slavery_banned
+}

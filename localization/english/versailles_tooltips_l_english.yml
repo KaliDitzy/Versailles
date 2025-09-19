@@ -1,0 +1,15 @@
+﻿l_english:
+ versailles_forgiven_loser: "Has relieved [SCOPE.sCountry('versailles_loser').GetName] of their obligations to the [concept_treaty_of_versailles]"
+ NOT_versailles_forgiven_loser: "Has not relieved [SCOPE.sCountry('versailles_loser').GetName] of their obligations to the [concept_treaty_of_versailles]"
+ NOT_versailles_broken: "Has not redupiated or broken the [concept_treaty_of_versailles]"
+ versailles_broken: "[SCOPE.sCountry('versailles_loser').GetName] has redupiated or broken the [concept_treaty_of_versailles]"
+
+ versailles_will_forgive_loser: "You will forgive [SCOPE.sCountry('versailles_loser').GetName] for their actions during the [concept_great_war] and will relieve them of their obligations to you as enforced by the [concept_treaty_of_versailles]"
+ versailles_will_redupiate: "You will redupiate the [concept_treaty_of_versailles] and refuse its legitimacy. This will break the [concept_treaty_of_versailles] and anger the [concept_great_war] victors."
+
+ warning_may_spark_action: "@warning! #r Choosing this option may result in retaliation from the [concept_great_war] victors.#!"
+
+ is_lon_member: "Is a [concept_league_of_nations] member"
+ NOT_is_lon_member: "Is not a [concept_league_of_nations] member"
+ lon_member_in_offensive_war: "A [concept_league_of_nations] member is leading or supporting an offensive war"
+ lon_member_in_defensive_war: "A [concept_league_of_nations] member is in a defensive war against a non-[concept_league_of_nations] member"

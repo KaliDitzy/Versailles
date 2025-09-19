@@ -1,0 +1,12 @@
+﻿COUNTRIES = {
+	c:RUS ?= {
+		effect_starting_technology_tier_3_tech = yes
+		
+		set_tax_level = low # pre-Kankrin reform tax system
+
+		# Laws
+		effect_starting_communist = yes
+		
+		add_taxed_goods = g:liquor
+	}
+}

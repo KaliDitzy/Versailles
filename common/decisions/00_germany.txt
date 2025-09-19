@@ -1,0 +1,66 @@
+GER_pass_enabling_act = {
+
+	#Trigger block that determines whether the decision is shown to the player as a potential option
+	is_shown = {
+		exists = c:GER
+		c:GER = ROOT
+		NOT = {
+			has_variable = has_enabling_act
+		}
+		NOT = {
+			AND = {
+				has_law = law_type:law_autocracy
+				has_law = law_type:law_corporate_state
+			}
+		}
+		ig:ig_petty_bourgeoisie = { is_marginal = no }
+		ig:ig_trade_unions = { is_in_government = no }
+		any_interest_group = {
+			leader = {
+				has_ideology = ideology:ideology_fascist
+			}
+		}
+	}
+
+	#Trigger block that determines when a shown decision can actually be selected
+	possible = {
+		ig:ig_petty_bourgeoisie = { is_powerful = yes }
+		ig:ig_armed_forces = { is_in_government = yes }
+		ig:ig_industrialists = { is_marginal = no }
+	}
+	
+	#The effects that are executed once the decision is taken
+	when_taken = {
+		set_variable = {
+			name = has_enabling_act
+			value = yes
+		}
+		
+		set_ruling_interest_groups = { ig_petty_bourgeoisie }
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_autocracy }
+			}
+			activate_law = law_type:law_autocracy
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_corporate_state }
+			}
+			activate_law = law_type:law_corporate_state
+		}
+
+		set_variable = {
+			name = GER_anschluss_progress
+			value = 0
+		}
+		add_journal_entry = {
+			type = GER_anschluss
+		}
+	}	
+	
+	#The chance/weight that the ai will take the decision, defaults to 1 if not specified. If chance is 0, the AI will not use the decision
+	ai_chance = {
+		value = 100
+	}
+}

@@ -1,0 +1,2 @@
+﻿l_english:
+  CANNOT_ADD_CONSCRIPT: "Has enacted [GetLawGroup('lawgroup_army_model').GetCurrentlyActive.GetName]"

@@ -1,0 +1,152 @@
+namespace = tov_reparations
+tov_reparations.1 = { # germany pays ww1 allies
+	type = country_event
+	event_image = {
+		video = "middleeast_courtroom_upheaval"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	title = tov_reparations.1.t
+	desc = tov_reparations.1.d
+	flavor = tov_reparations.1.f
+
+	duration = 3
+
+	option = {
+		name = tov_reparations.1.a
+		default_option = yes
+		c:FRA = {
+			if = {
+				limit = {
+					NOT = { has_variable = tov_relieved }
+				}
+				prev = { add_treasury = -250000 }
+				add_treasury = 250000
+			}
+		}
+		c:GBR = {
+			if = {
+				limit = {
+					NOT = { has_variable = tov_relieved }
+				}
+				prev = { add_treasury = -250000 }
+				add_treasury = 250000
+			}
+		}
+		c:BEL = {
+			if = {
+				limit = {
+					NOT = { has_variable = tov_relieved }
+				}
+				prev = { add_treasury = -100000 }
+				add_treasury = 100000
+			}
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = tov_reparations.1.b
+		custom_tooltip = warning_may_spark_action
+
+		change_infamy = 5
+
+		c:FRA = {
+			trigger_event = tov_reparations.2
+		}
+		c:GBR = {
+			trigger_event = tov_reparations.2
+		}
+		c:BEL = {
+			trigger_event = tov_reparations.2
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+tov_reparations.2 = { # germany refuses to pay their dues
+	type = country_event
+	event_image = {
+		video = "middleeast_courtroom_upheaval"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	title = tov_reparations.2.t
+	desc = tov_reparations.2.d
+	flavor = tov_reparations.2.f
+
+	duration = 3
+
+	option = {
+		name = tov_reparations.2.a
+		default_option = yes
+
+		c:GER = {
+			trigger_event = tov_reparations.3
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = tov_reparations.2.b
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1000
+				c:BEL = root
+			}
+		}
+	}
+}
+tov_reparations.3 = { # allied country sends ultimatum for not paying dues
+	type = country_event
+	event_image = {
+		video = "middleeast_courtroom_upheaval"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	title = tov_reparations.3.t
+	desc = tov_reparations.3.d
+	flavor = tov_reparations.3.f
+
+	duration = 3
+
+	option = {
+		name = tov_reparations.3.a
+		default_option = yes
+		
+		add_treasury = -300000
+		from = { add_treasury = 300000 }
+
+		ai_chance = {
+			base = 85
+		}
+	}
+
+	option = {
+		name = tov_reparations.3.b
+		custom_tooltip = warning_may_spark_action
+
+		ai_chance = {
+			base = 15
+		}
+	}
+}

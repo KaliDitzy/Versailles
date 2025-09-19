@@ -1,0 +1,77 @@
+tov_relieve_obligations = {
+	name = "button_relieve_obligations"
+	desc = "button_relieve_obligations_desc"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 0
+	}
+
+	possible = {
+		NOT = {
+			custom_tooltip = {
+				text = NOT_versailles_forgiven_loser
+				has_variable = tov_relieved
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = versailles_will_forgive_loser
+		set_variable = {
+			name = tov_relieved
+			value = yes
+		}
+	}
+}
+tov_redupiate = {
+	name = "button_redupiate"
+	desc = "button_redupiate_desc"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 0
+	}
+
+	possible = {
+		NOT = {
+			custom_tooltip = {
+				text = NOT_versailles_broken
+				has_variable = tov_invalid
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = versailles_will_redupiate
+		every_country = {
+			set_variable = {
+				name = tov_invalid
+				value = yes
+			}
+		}
+		c:GBR ?= {
+			change_relations = {
+				country = root
+				value = -30
+			}
+		}
+		c:FRA ?= {
+			change_relations = {
+				country = root
+				value = -30
+			}
+		}
+		c:BEL ?= {
+			change_relations = {
+				country = root
+				value = -30
+			}
+		}
+		change_infamy = 15
+	}
+}

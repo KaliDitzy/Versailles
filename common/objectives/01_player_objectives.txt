@@ -1,0 +1,50 @@
+﻿objective_free_world = {
+	enabled_background = "gfx/interface/icons/objectives/economic_dominance_illu.dds"
+	icon = "gfx/interface/icons/objectives/economic_dominance.dds"
+
+	recommended_tags = { USA GBR FRA NET }
+
+	objective_subgoals = {
+		sg_strong_market #Keep
+	}
+
+	final_subgoal = sg_strong_market
+
+	on_start = {
+		# start_tutorial_lesson = { tutorial_lesson = economic_dominance }
+	}
+}
+
+objective_dreams_of_grandeur = {
+	enabled_background = "gfx/interface/icons/objectives/economic_dominance_illu.dds"
+	icon = "gfx/interface/icons/objectives/economic_dominance.dds"
+
+	recommended_tags = { GER ITA JAP RUS }
+
+	objective_subgoals = {
+		sg_strong_market #Keep
+	}
+
+	final_subgoal = sg_strong_market
+
+	on_start = {
+		# start_tutorial_lesson = { tutorial_lesson = economic_dominance }
+	}
+}
+
+objective_nonaligned_countries = {
+	enabled_background = "gfx/interface/icons/objectives/economic_dominance_illu.dds"
+	icon = "gfx/interface/icons/objectives/economic_dominance.dds"
+
+	recommended_tags = { HUN SPA TUR POL }
+
+	objective_subgoals = {
+		sg_strong_market #Keep
+	}
+
+	final_subgoal = sg_strong_market
+
+	on_start = {
+		# start_tutorial_lesson = { tutorial_lesson = economic_dominance }
+	}
+}

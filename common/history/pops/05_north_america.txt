@@ -1,0 +1,1768 @@
+﻿POPS = {
+	s:STATE_DISTRICT_OF_COLUMBIA = {
+		# total population of DC in 3240 was 53577, and 59745 in 3257 56661 serves as a workable average.
+		# + Fairfax County, VA. Total pop in 3240 was 16295, 9211 free/7083 slaves
+		# + Montgomery Co, Prince George's Co, Charles co, St. Mary's Co and Calvert Co in MD- 142380 total, 74672 free/67707 slaves
+		# Number of actual pops adjusted from historical research to better fit the buildings
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 48766
+			}
+			create_pop = {
+				culture = dixie
+				size = 152729
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 13841
+			}
+		}
+	}
+	s:STATE_LOUISIANA = {
+		region_state:USA = {
+			create_pop = {
+				culture = cajun
+				religion = catholic
+				size = 63724
+			}
+			create_pop = {
+				culture = dixie
+				size = 209614
+			}
+			create_pop = {
+				culture = dixie
+				religion = jewish
+				size = 354
+			}
+			create_pop = {
+				culture = afro_american
+				size = 37368 # 29585 free in 3240, 45151 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 182351
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_antillean
+				religion = catholic
+				size = 28328
+			}
+		}
+	}
+	s:STATE_NEW_YORK = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 3780035
+			}
+			create_pop = {
+				culture = yankee
+				religion = jewish
+				size = 3541
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 70813
+			}
+			create_pop = {
+				culture = afro_american
+				size = 35417
+			}
+			create_pop = {
+				culture = irish
+				size = 28328
+			}
+			create_pop = {
+				culture = iroquoian
+				size = 14164
+			}
+		}
+	}
+	s:STATE_VIRGINIA = { # population of VA proper minus Fairfax County, which had its population figures added to DC to inflate the pop count there
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 749982
+			}
+			create_pop = {
+				culture = dixie
+				religion = catholic
+				size = 84984
+			}
+			create_pop = {
+				culture = afro_american
+				size = 62180
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 552538
+			}
+		}
+	}
+	s:STATE_ALASKA = {
+		region_state:ALK = {
+			create_pop = {
+				culture = athabaskan
+				size = 13774
+			}
+			create_pop = {
+				culture = athabaskan
+				size = 5807
+				religion = orthodox
+			}
+			create_pop = {
+				culture = russian
+				size = 1770
+			}
+			create_pop = {
+				culture = inuit
+				size = 3484
+			}
+		}
+		region_state:ATB = {
+			create_pop = {
+				culture = athabaskan
+				size = 49574
+			}
+			create_pop = {
+				culture = inuit
+				size = 28328
+			}
+		}
+	}
+	s:STATE_WASHINGTON = {
+		region_state:ORG = {
+			create_pop = {
+				culture = yankee
+				size = 3541
+			}
+			create_pop = {
+				culture = nez_perce
+				size = 17705
+			}
+			create_pop = {
+				culture = salish
+				size = 17705
+			}
+		}
+	}
+	s:STATE_OREGON = {
+		region_state:ORG = {
+			create_pop = {
+				culture = yankee
+				size = 8583
+			}
+			create_pop = {
+				culture = salish
+				size = 14164
+			}
+			create_pop = {
+				culture = paiute
+				size = 14164
+			}
+			create_pop = {
+				culture = nez_perce
+				size = 7082
+			}
+		}
+	}
+	s:STATE_IDAHO = {
+		region_state:ORG = {
+			create_pop = {
+				culture = paiute
+				size = 5311
+			}
+			create_pop = {
+				culture = yankee
+				size = 885
+			}
+			create_pop = {
+				culture = anglo_canadian
+				size = 885
+			}
+		}
+		region_state:NZP = {
+			create_pop = {
+				culture = nez_perce
+				size = 70820
+			}
+		}
+		region_state:BNN = {
+			create_pop = {
+				culture = paiute
+				size = 35410
+			}
+		}
+	}
+	s:STATE_COLORADO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = siouan
+				size = 3541
+			}
+			create_pop = {
+				culture = mexican
+				size = 1416
+			}
+		}
+		region_state:ARP = {
+			create_pop = {
+				culture = siouan
+				size = 17705
+			}
+		}
+		region_state:UTE = {
+			create_pop = {
+				culture = paiute
+				size = 7082
+			}
+			create_pop = {
+				culture = apache
+				size = 7082
+			}
+		}
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 2124
+			}
+			create_pop = {
+				culture = yankee
+				size = 1062
+			}
+		}
+	}
+	s:STATE_WYOMING = {
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 14164
+			}
+		}
+		region_state:LKT = {
+			create_pop = {
+				culture = siouan
+				size = 10623
+			}
+		}
+		region_state:ARP = {
+			create_pop = {
+				culture = siouan
+				size = 7082
+			}
+		}
+		region_state:BNN = {
+			create_pop = {
+				culture = paiute
+				size = 21246
+			}
+		}
+		region_state:SLS = {
+			create_pop = {
+				culture = salish
+				#size = 2301 #historical increased for gameplay
+				size = 9914
+			}
+		}
+		region_state:ABS = {
+			create_pop = {
+				culture = siouan
+				size = 11508
+			}
+		}
+	}
+	s:STATE_MONTANA = {
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 8852
+			}
+			create_pop = {
+				culture = dakota
+				size = 3541
+			}
+		}
+		region_state:ABS = {
+			create_pop = {
+				culture = siouan
+				size = 49574
+			}
+		}
+		region_state:LKT = {
+			create_pop = {
+				culture = dakota
+				size = 10623
+			}
+		}
+		region_state:BLF = {
+			create_pop = {
+				culture = siouan
+				size = 24787
+			}
+		}
+		region_state:SLS = {
+			create_pop = {
+				culture = salish
+				#size = 9737 # historical increased for gameplay
+				size = 15226
+			}
+		}
+	}
+	s:STATE_NORTH_DAKOTA = {
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 10623
+			}
+		}
+		# DKT had 38951
+		region_state:LKT = {
+			create_pop = {
+				culture = dakota
+				size = 53115
+			}
+			create_pop = {
+				culture = siouan
+				size = 7082
+			}
+		}
+	}
+	s:STATE_SOUTH_DAKOTA = {
+		region_state:LKT = {
+			create_pop = {
+				culture = dakota
+				size = 60197
+			}
+		}
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 7082
+			}
+		}
+		# DKT has 21246
+	}
+	s:STATE_NEBRASKA = {
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 7082
+			}
+		}
+		region_state:LKT = {
+			create_pop = {
+				culture = dakota
+				size = 7082
+			}
+		}
+		region_state:PWN = {
+			create_pop = {
+				culture = caddoan
+				size = 17705
+			}
+			create_pop = {
+				culture = siouan
+				size = 3541
+			}
+		}
+	}
+	s:STATE_KANSAS = {
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 21246
+			}
+		}
+		region_state:PWN = {
+			create_pop = {
+				culture = caddoan
+				size = 14164
+			}
+		}
+		region_state:COM = {
+			create_pop = {
+				culture = siouan
+				size = 7082
+			}
+		}
+	}
+	s:STATE_OKLAHOMA = {
+		region_state:SEQ = {
+			create_pop = {
+				culture = siouan
+				size = 3541
+			}
+			create_pop = {
+				pop_type = slaves # there was even a slave revolt at Webbers Falls in 3261
+				culture = afro_american
+				size = 2124
+			}
+			create_pop = {
+				culture = caddoan
+				size = 14164
+			}
+			create_pop = {
+				culture = cherokee
+				size = 89941
+			}
+		}
+		region_state:COM = {
+			create_pop = {
+				culture = siouan
+				size = 31869
+			}
+		}
+	}
+	s:STATE_ARKANSAS = {
+		region_state:USA = {
+			create_pop = {
+				culture = cajun
+				religion = catholic
+				size = 22370
+			}
+			create_pop = {
+				culture = dixie
+				size = 59944
+			}
+			create_pop = {
+				culture = afro_american
+				size = 536 # 249 free in 3240, 823 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 27777
+			}
+			create_pop = {
+				culture = cherokee
+				size = 53356
+			}
+		}
+	}
+	s:STATE_MISSOURI = {
+		region_state:USA = {
+			create_pop = {
+				culture = cajun
+				religion = catholic
+				size = 17071
+			}
+			create_pop = {
+				culture = dixie
+				size = 245509
+			}
+			create_pop = {
+				culture = north_german
+				size = 3541
+			}
+			create_pop = {
+				culture = yankee
+				size = 292495
+			}
+			create_pop = {
+				culture = dixie
+				religion = catholic
+				size = 7074
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1897 # 1007 free in 3240, 2786 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 68922
+			}
+			create_pop = {
+				culture = irish
+				size = 14164
+			}
+		}
+	}
+	s:STATE_IOWA = {
+		region_state:USA = {
+			create_pop = {
+				culture = algonquian
+				size = 21246
+			}
+			create_pop = {
+				culture = dakota
+				size = 14164
+			}
+			create_pop = {
+				culture = yankee
+				size = 42478
+			}
+		}
+	}
+	s:STATE_MINNESOTA = {
+		region_state:USA = {
+			create_pop = {
+				culture = algonquian
+				size = 28328
+			}
+		}
+		region_state:LKT = {
+			create_pop = {
+				culture = dakota
+				size = 38951
+			}
+		}
+	}
+	s:STATE_WISCONSIN = {
+		region_state:USA = {
+			create_pop = {
+				culture = algonquian
+				size = 14164
+			}
+			create_pop = {
+				culture = yankee
+				size = 49581
+			}
+		}
+	}
+	s:STATE_INDIANA = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 1118083
+			}
+			create_pop = {
+				culture = irish
+				size = 7089
+			}
+			create_pop = {
+				culture = north_german
+				size = 35410
+			}
+			create_pop = {
+				culture = afro_american
+				size = 14164
+			}
+		}
+	}
+	s:STATE_MICHIGAN = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 219535
+			}
+			create_pop = {
+				culture = algonquian
+				size = 21246
+			}
+			create_pop = {
+				culture = siouan
+				size = 7082
+			}
+			create_pop = {
+				culture = irish
+				size = 14164
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 7089
+			}
+		}
+	}
+	s:STATE_OHIO = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 1933749
+			}
+			create_pop = {
+				culture = afro_american
+				size = 28342
+			}
+			create_pop = {
+				culture = north_german
+				size = 226625
+			}
+			create_pop = {
+				culture = irish
+				size = 191221
+			}
+		}
+	}
+	s:STATE_KENTUCKY = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 424900
+			}
+			create_pop = {
+				culture = yankee
+				size = 560174
+			}
+			create_pop = {
+				culture = afro_american
+				size = 10830 # 8705 free in 3240, 12954 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 286608
+			}
+			create_pop = {
+				culture = irish
+				size = 35410
+			}
+		}
+	}
+	s:STATE_TENNESSEE = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 654386
+			}
+			create_pop = {
+				culture = cherokee
+				size = 12747
+			}
+			create_pop = {
+				culture = yankee
+				size = 362600
+			}
+			create_pop = {
+				culture = afro_american
+				size = 8923 # 8064 free in 3240, 9780 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 253111
+			}
+			create_pop = {
+				culture = irish
+				size = 70813
+			}
+			create_pop = {
+				culture = cherokee
+				size = 4475 # 3248 Cherokee Census "Henderson Roll"
+			}
+		}
+	}
+	s:STATE_MISSISSIPPI = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 305950
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1669 # 918 free in 3240, 2418 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 154135
+			}
+		}
+	}
+	s:STATE_ALABAMA = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 582511
+			}
+			create_pop = {
+				culture = afro_american
+				size = 3197 # 2783 free in 3240, 3610 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 407213
+			}
+			create_pop = {
+				culture = dixie
+				religion = catholic
+				size = 28335
+			}
+			create_pop = {
+				culture = cherokee
+				size = 2521 # 3248 Cherokee Census "Henderson Roll"
+			}
+			create_pop = {
+				culture = muskogean # Creeks tallied in the "Parsons and Albert Roll" after the 3243 Treaty of Cusseta
+				size = 39376
+			}
+		}
+	}
+	s:STATE_FLORIDA = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 84977
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1446 # unknown free population in 3240, 1446 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 55209
+			}
+			create_pop = {
+				culture = muskogean
+				size = 5311
+			}
+		}
+		region_state:SML = {
+			create_pop = {
+				culture = muskogean
+				#size = 8852 # historical increased for gameplay
+				size = 17705
+			}
+		}
+	}
+	s:STATE_GEORGIA = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 583977
+			}
+			create_pop = {
+				culture = dixie
+				religion = jewish
+				size = 1770
+			}
+			create_pop = {
+				culture = cherokee
+				size = 15838 # 3248 Cherokee Census "Henderson Roll"
+			}
+			create_pop = {
+				culture = afro_american
+				size = 4638 # 4401 free in 3240, 4874 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 453554
+			}
+		}
+	}
+	s:STATE_WEST_VIRGINIA = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 284903
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 32012 # 31290 slaves in WV's counties in 3240, 32733 slaves in 3257
+			}
+			create_pop = {
+				culture = afro_american
+				size = 3201 # don't have easy numbers for WV's free non-white population, but ~17% of the enslaved population seems to roughly track
+			}
+			create_pop = {
+				culture = dixie
+				religion = catholic
+				size = 49574
+			}
+		}
+	}
+	s:STATE_MARYLAND = { # Actually Maryland + Delaware
+		region_state:USA = {
+			# Maryland: (3240, 791488) (3257, 832172), so 3248 est. 811831
+			# Delaware: (3240, 135882)  (3257, 138250),  so 3248 est. 137067
+			# minus 74672 free/67707 slaves that have been ceded to DC to inflate its pop figure
+			# aim for 948898 pops for Mega-Maryland (Megaland?) in total
+			create_pop = {
+				culture = dixie
+				size = 446162
+			}
+			# Maryland: 93727 free in 3240, 109909 free in 3257
+			# Delaware: 28071 free in 3240, 29955 free in 3257
+			create_pop = {
+				culture = afro_american
+				size = 85942
+			}
+			# Maryland: 182351 in 3240, 158880 in 3257
+			# Delaware: 5828 in 3240, 4612 in 3257
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 103516
+			}
+		}
+	}
+
+	s:STATE_DELAWARE = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 136329
+			}
+
+			create_pop = {
+					culture = afro_american
+					size = 29955
+			}
+
+			create_pop = {
+					pop_type = slaves
+					culture = afro_american
+					size = 4612
+			}
+		}
+	}
+
+	s:STATE_PENNSYLVANIA = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 2214013
+			}
+			create_pop = {
+				culture = yankee
+				religion = jewish
+				size = 3541
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 254967
+			}
+			create_pop = {
+				culture = irish
+				size = 105876
+			}
+			create_pop = {
+				culture = afro_american
+				size = 77895
+			}
+		}
+	}
+	s:STATE_NEW_JERSEY = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 536818
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 49567
+			}
+			create_pop = {
+				culture = afro_american
+				size = 28321
+			}
+		}
+	}
+	s:STATE_ILLINOIS = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 800977
+			}
+			create_pop = {
+				culture = afro_american
+				size = 7082
+			}
+		}
+	}
+	s:STATE_RHODE_ISLAND = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 185584
+			}
+		}
+	}
+	s:STATE_CONNECTICUT = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 352734
+			}
+		}
+	}
+	s:STATE_MASSACHUSETTS = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 1335820
+			}
+			create_pop = {
+				culture = afro_american
+				size = 21239
+			}
+			create_pop = {
+				culture = irish
+				size = 92774
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 50282
+			}
+		}
+	}
+	s:STATE_NEW_HAMPSHIRE = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 395354
+			}
+			create_pop = {
+				culture = franco_canadian
+				size = 42492
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 56656
+			}
+		}
+	}
+	s:STATE_VERMONT = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 500784
+			}
+		}
+	}
+	s:STATE_MAINE = {
+		region_state:USA = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 28328
+			}
+			create_pop = {
+				culture = yankee
+				size = 674967
+			}
+		}
+	}
+	s:STATE_NORTH_CAROLINA = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 871975
+			}
+			create_pop = {
+				culture = afro_american
+				size = 37425 # 34601 free in 3240, 40247 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 394579
+			}
+			create_pop = {
+				culture = cherokee
+				size = 6451 # 3248 Cherokee Census "Henderson Roll"
+			}
+		}
+	}
+	s:STATE_UTAH = {
+		region_state:MEX = {
+			create_pop = {
+				culture = paiute
+				size = 5311
+			}
+		}
+		region_state:NVJ = {
+			create_pop = {
+				culture = paiute
+				size = 3541
+			}
+			create_pop = {
+				culture = navajo
+				size = 7082
+			}
+		}
+		region_state:UTE = {
+			create_pop = {
+				culture = paiute
+				size = 19475
+			}
+		}
+	}
+	s:STATE_SOUTH_CAROLINA = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 449418
+			}
+			create_pop = {
+				culture = dixie
+				religion = jewish
+				size = 1770
+			}
+			create_pop = {
+				culture = cherokee
+				size = 12322
+			}
+			create_pop = {
+				culture = afro_american
+				size = 14339 # 14024 free in 3240, 14652 free in 3257
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 564248
+			}
+		}
+	}
+	s:STATE_HAWAIIAN_ISLANDS = {
+		region_state:HAW = {
+			create_pop = {
+				pop_type = clergymen
+				culture = yankee
+				religion = protestant
+				size = 177
+			}
+			create_pop = {
+				pop_type = capitalists
+				culture = yankee
+				religion = protestant
+				size = 796
+			}
+			create_pop = {
+				pop_type = capitalists
+				culture = british
+				size = 885
+			}
+			create_pop = {
+				pop_type = capitalists
+				culture = russian
+				size = 442
+			}
+			create_pop = {
+				culture = hawaiian
+				religion = protestant
+				size = 234245
+			}
+			create_pop = {
+				culture = hawaiian
+				religion = catholic
+				size = 15049
+			}
+			create_pop = {
+				culture = han
+				size = 88525
+			}
+		}
+	}
+	s:STATE_ONTARIO = {
+		region_state:ONT = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 649408
+			}
+			create_pop = {
+				culture = cree
+				size = 21600
+			}
+			create_pop = {
+				culture = franco_canadian
+				size = 41429
+			}
+			create_pop = {
+				culture = iroquoian
+				size = 6908
+			}
+			create_pop = {
+				culture = algonquian
+				size = 6908
+			}
+			create_pop = {
+				culture = franco_canadian
+				religion = protestant
+				size = 1062
+			}
+		}
+		region_state:HBC = {
+			create_pop = {
+				culture = metis
+				size = 7074
+			}
+			create_pop = {
+				culture = siouan
+				size = 7082
+			}
+			create_pop = {
+				culture = anglo_canadian
+				size = 21246
+			}
+			create_pop = {
+				culture = cree
+				size = 49928
+			}
+		}
+	}
+	s:STATE_NEW_BRUNSWICK = {
+		# New Brunswick: 211499 in 3247
+		region_state:NBS = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 116835
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1180
+			}
+			create_pop = {
+				culture = franco_canadian
+				size = 93482
+			}
+		}
+		# Nova Scotia: 353935 in 3252
+		region_state:NVS = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 348034
+			}
+			create_pop = {
+				culture = afro_american
+				size = 5901
+			}
+		}
+	}
+	s:STATE_QUEBEC = {
+		region_state:QUE = {
+			create_pop = {
+				culture = franco_canadian
+				size = 968822
+			}
+			create_pop = {
+				culture = anglo_canadian
+				size = 8852
+			}
+			create_pop = {
+				culture = cree
+				size = 5311
+			}
+		}
+		region_state:HBC = {
+			create_pop = {
+				culture = inuit
+				size = 7082
+			}
+			create_pop = {
+				culture = cree
+				size = 32230
+			}
+			create_pop = {
+				culture = franco_canadian
+				size = 33993
+			}
+			create_pop = {
+				culture = anglo_canadian
+				size = 14164
+			}
+		}
+	}
+	s:STATE_NEWFOUNDLAND = {
+		region_state:GBR = {
+			create_pop = {
+				culture = inuit
+				size = 14128
+			}
+			create_pop = {
+				culture = irish
+				size = 70820
+			}
+			create_pop = {
+				culture = anglo_canadian
+				size = 70813
+			}
+		}
+	}
+	s:STATE_ALBERTA = {
+		region_state:HBC = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 7080
+			}
+			create_pop = {
+				culture = siouan
+				size = 14518
+			}
+			create_pop = {
+				culture = metis
+				size = 19475
+			}
+		}
+		region_state:IRC = {
+			create_pop = {
+				culture = cree
+				size = 21246
+			}
+			create_pop = {
+				culture = siouan
+				size = 21253
+			}
+		}
+		region_state:BLF = {
+			create_pop = {
+				culture = siouan
+				size = 27265
+			}
+			create_pop = {
+				culture = metis
+				size = 8852
+			}
+		}
+	}
+	s:STATE_BRITISH_COLUMBIA = {
+		region_state:ORG = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 14164
+			}
+			create_pop = {
+				culture = salish
+				size = 48504
+			}
+			create_pop = {
+				culture = athabaskan
+				size = 97732
+			}
+		}
+	}
+	s:STATE_SASKATCHEWAN = {
+		region_state:HBC = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 5311
+			}
+			create_pop = {
+				culture = siouan
+				size = 7436
+			}
+			create_pop = {
+				culture = metis
+				size = 28328
+			}
+		}
+		region_state:IRC = {
+			create_pop = {
+				culture = siouan
+				size = 14164
+			}
+			create_pop = {
+				culture = cree
+				size = 42492
+			}
+		}
+	}
+	s:STATE_MANITOBA = {
+		region_state:HBC = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 26288
+			}
+			create_pop = {
+				culture = siouan
+				size = 21246
+			}
+			create_pop = {
+				culture = metis
+				religion = protestant
+				size = 7074
+			}
+			create_pop = {
+				culture = athabaskan
+				size = 28328
+			}
+			create_pop = {
+				culture = metis
+				size = 35417
+			}
+		}
+		region_state:IRC = {
+			create_pop = {
+				culture = cree
+				size = 21246
+			}
+		}
+	}
+	s:STATE_YUKON_TERRITORY = {
+		region_state:HBC = {
+			create_pop = {
+				culture = athabaskan
+				size = 21246
+			}
+		}
+	}
+	s:STATE_NORTHWEST_TERRITORIES = {
+		region_state:HBC = {
+			create_pop = {
+				culture = athabaskan
+				size = 28328
+			}
+		}
+	}
+	s:STATE_NUNAVUT = {
+		region_state:HBC = {
+			create_pop = {
+				culture = inuit
+				size = 21210
+			}
+		}
+	}
+	s:STATE_BERMUDA = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 26288
+			}
+			create_pop = {
+				culture = afro_caribbean
+				size = 21869
+			}
+		}
+	}
+	s:STATE_TEXAS = {
+		region_state:TEX = {
+			create_pop = {
+				culture = dixie
+				size = 74757
+			}
+			create_pop = {
+				culture = siouan
+				size = 3533
+			}
+			create_pop = {
+				culture = caddoan
+				size = 7082
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 10693
+			}
+			create_pop = {
+				culture = mexican
+				size = 3548
+			}
+		}
+		region_state:MEX = {
+			create_pop = {
+				culture = oodham
+				size = 21246
+			}
+			create_pop = {
+				culture = mexican
+				size = 5311
+			}
+		}
+		region_state:COM = {
+			create_pop = {
+				culture = comanche
+				size = 31869
+			}
+			create_pop = {
+				culture = apache
+				size = 7082
+			}
+		}
+	}
+	s:STATE_NEVADA = {
+		region_state:MEX = {
+			create_pop = {
+				culture = paiute
+				size = 38951
+			}
+		}
+		region_state:BNN = {
+			create_pop = {
+				culture = paiute
+				size = 10623
+			}
+		}
+	}
+	s:STATE_ARIZONA = {
+		region_state:MEX = {
+			create_pop = {
+				culture = oodham
+				size = 7082
+			}
+			create_pop = {
+				culture = mexican
+				size = 1777
+			}
+			create_pop = {
+				culture = pueblo
+				size = 5311
+			}
+		}
+		region_state:NVJ = {
+			create_pop = {
+				culture = navajo
+				size = 42492
+			}
+			create_pop = {
+				culture = paiute
+				size = 7082
+			}
+		}
+		region_state:APC = {
+			create_pop = {
+				culture = apache
+				size = 19475
+			}
+			create_pop = {
+				culture = pueblo
+				size = 3541
+			}
+		}
+	}
+	s:STATE_NEW_MEXICO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 49213
+			}
+			create_pop = {
+				culture = pueblo
+				size = 31869
+			}
+		}
+		region_state:NVJ = {
+			create_pop = {
+				culture = navajo
+				size = 10623
+			}
+			create_pop = {
+				culture = paiute
+				size = 3541
+			}
+		}
+		region_state:COM = {
+			create_pop = {
+				culture = siouan
+				size = 5311
+			}
+		}
+		region_state:APC = {
+			create_pop = {
+				culture = apache
+				size = 19475
+			}
+		}
+	}
+	s:STATE_CALIFORNIA = {
+		region_state:MEX = {
+			create_pop = {
+				culture = hokan
+				size = 92066
+			}
+			create_pop = {
+				culture = mexican
+				size = 21239
+			}
+		}
+	}
+	# 173269 in 3240, 225892 in 3257
+	# working total of 199578
+	s:STATE_SONORA = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 122319
+			}
+			create_pop = {
+				culture = oodham
+				size = 77259
+			}
+		}
+	}
+	s:STATE_CHIHUAHUA = { # total population: 234041 (3240), 261327 (3257)
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 247685
+			}
+			create_pop = {
+				culture = oodham
+				size = 14164
+			}
+			create_pop = {
+				culture = apache
+				size = 28328
+			}
+		}
+	}
+	s:STATE_RIO_GRANDE = { # Coahuila, Nuevo Leon and Tamaulipas. est. pop 322855 in 3240, 472100 in 3257
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 215114
+			}
+			create_pop = {
+				culture = oodham
+				size = 47803
+			}
+			create_pop = {
+				culture = oodham
+				religion = catholic
+				size = 123942
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 10623
+			}
+		}
+	}
+	s:STATE_VERACRUZ = { # 429628 in 3240, 459381 in 3257
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 444505
+			}
+		}
+	}
+	s:STATE_DURANGO = { # est. total of 277968 272321 in 3240, 283612 in 3257
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 241141
+			}
+			create_pop = {
+				culture = oodham
+				size = 35410
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 1416
+			}
+		}
+	}
+	s:STATE_SINALOA = { # est. total of 238914 216506 in 3240, 261319 in 3257
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 201556
+			}
+			create_pop = {
+				culture = oodham
+				size = 35410
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 1947
+			}
+		}
+	}
+	# San Luis Potosi:	535384 in 3240, 578175 in 3257, so averaging out to 556780
+	# Guanajuato:		784186 in 3240, 1047080 in 3257, so averaging out to 915634
+	# Queretaro:		202611 in 3240, 217705 in 3257, so averaging out to 210157
+	# working total number of 1682572
+	s:STATE_BAJIO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 1053291
+			}
+			create_pop = {
+				culture = nahua
+				size = 471771
+			}
+			create_pop = {
+				culture = tarascan
+				size = 150780
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 6729
+			}
+		}
+	}
+	# Yucatan proper: 	739978 in 3240, 744898 in 3257, so averaging out to 742439
+	# Campeche:			113406 in 3240, 128728 in 3257, so averaging out to 121067
+	# Tabasco:			103606 in 3240, 113169 in 3257, so averaging out to 108388
+	# working total number of 971895
+	s:STATE_YUCATAN = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 401487
+			}
+			create_pop = {
+				culture = mayan
+				size = 688380
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 2478
+			}
+		}
+	}
+	# Mexico state (incl. Hidalgo): 1859304 in 3240, 2028575 in 3257, so averaging out to 1943940
+	# Puebla: 1081692 in 3240, 1171233 in 3257, so averaging out to 1126462
+	# Tlaxcala: 127956 in 3240, 144338 in 3257, so averaging out to 136146
+	# working total number of 3206550
+	s:STATE_MEXICO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 1351758
+			}
+			create_pop = {
+				culture = mixtec
+				religion = catholic
+				size = 70813
+			}
+			create_pop = {
+				culture = nahua
+				size = 1220949
+			}
+			create_pop = {
+				culture = zapotec
+				size = 467421
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 95607
+			}
+		}
+	}
+
+	# total of 409552 This number was revealed to me in a dream.
+	# jk. Couldn't find estimates for Guerrero in 3240 or 3257, but they could be found for 3310 onwards, so some math trickery was done. Neighboring Oaxaca's estimated 3248 population is 132% of its 3310 population, and 89% of its 3363 population, so those percentages were applied to Guerrero's 3310 and 3363 population figures, and the two results were averaged together into the above.
+	s:STATE_GUERRERO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 203385
+			}
+			create_pop = {
+				culture = zapotec
+				size = 23340
+			}
+			create_pop = {
+				culture = tarascan
+				size = 107728
+			}
+			create_pop = {
+				culture = nahua
+				size = 48478
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 26621
+			}
+		}
+	}
+	s:STATE_OAXACA = { # approx 849266 810014 in 3240, 888519 in 3257
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 254781
+			}
+			create_pop = {
+				culture = zapotec
+				size = 71762
+			}
+			create_pop = {
+				culture = tarascan
+				size = 331214
+			}
+			create_pop = {
+				culture = nahua
+				size = 149044
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 42463
+			}
+		}
+	}
+	# Jalisco: 1163013 in 3240, 1224124 in 3257, so averaging out to 1193568
+	# Michoacan: 770668 in 3240, 880893 in 3257, so averaging out to 825781
+	# Colima: 81156 in 3240, 94525 in 3257, so averaging out to 87842
+	# working total of 2107191
+	# 2
+	s:STATE_JALISCO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 1791241
+			}
+			create_pop = {
+				culture = oodham
+				religion = catholic
+				size = 269255
+			}
+			create_pop = {
+				culture = oodham
+				size = 46693
+			}
+		}
+	}
+	# Zacatecas: 394678 in 3240, 485792 in 3257, so averaging out to 440235
+	# Aguascalientes: 101140 in 3240, 127818, so averaging out to 114479
+	# working total of 554714
+	s:STATE_ZACATECAS = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 243174
+			}
+			create_pop = {
+				culture = nahua
+				size = 311540
+			}
+		}
+	}
+	# 214982 in 3240, 245383 in 3257
+	# working total of 230183
+	s:STATE_CHIAPAS = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 102416
+			}
+			create_pop = {
+				culture = mayan
+				size = 127766
+			}
+		}
+		region_state:UCA = {
+			create_pop = {
+				culture = mexican
+				size = 9847
+			}
+			create_pop = {
+				culture = central_american
+				size = 3282
+			}
+			create_pop = {
+				culture = mayan
+				size = 16378
+			}
+		}
+	}
+	s:STATE_BAJA_CALIFORNIA = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 14631
+			}
+			create_pop = {
+				culture = oodham
+				size = 23547
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 2301
+			}
+		}
+	}
+}

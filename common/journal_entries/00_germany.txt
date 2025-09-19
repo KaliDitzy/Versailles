@@ -1,0 +1,127 @@
+﻿GER_anschluss = {
+	group = nazi_germany
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	complete = {
+		hidden_trigger = {
+			var:GER_anschluss_progress = 100
+		}
+		c:AUS = {
+			is_in_same_power_bloc = c:GER
+			ig:ig_petty_bourgeoisie = { is_in_government = yes is_powerful = yes }
+		}
+	}
+	on_complete = {
+		c:AUS = {
+			trigger_event = germany_events.1
+		}
+	}
+
+	fail = {
+		c:GER = {
+			OR = { 
+				has_war_with = c:AUS
+			}
+		}
+		OR = {
+			NOT = { has_law = law_type:law_autocracy }
+			NOT = { has_law = law_type:law_corporate_state }
+		}
+	}
+
+	invalid = {
+		NOT = { exists = c:AUS }
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			c:GER = {
+				set_variable = {
+					name = GER_anschluss_progress_goal
+					value = 0
+				}
+			}
+			c:AUS = {
+				if = {
+					limit = {
+						is_in_same_power_bloc = c:GER
+					}
+					c:GER = {
+						change_variable = {
+							name = GER_anschluss_progress_goal
+							add = 40
+						}
+					}
+				}
+				if = {
+					limit = {
+						ig:ig_petty_bourgeoisie = { is_in_government = yes }
+					}
+					c:GER = {
+						change_variable = {
+							name = GER_anschluss_progress_goal
+							add = 30
+						}
+					}
+				}
+				if = {
+					limit = {
+						ig:ig_petty_bourgeoisie = { is_powerful = yes }
+					}
+					c:GER = {
+						change_variable = {
+							name = GER_anschluss_progress_goal
+							add = 30
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:GER_anschluss_progress < var:GER_anschluss_progress_goal
+				}
+				c:GER = {
+					change_variable = {
+						name = GER_anschluss_progress
+						add = 2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					var:GER_anschluss_progress > var:GER_anschluss_progress_goal
+				}
+				c:GER = {
+					change_variable = {
+						name = GER_anschluss_progress
+						subtract = 4
+					}
+				}
+			}
+		}
+	}
+
+	current_value = {
+		if = {
+            limit = {
+                scope:journal_entry = {
+                    goal_value = 0
+                }
+            }
+            value = 0
+        }
+        else = {
+            value = var:GER_anschluss_progress
+        }
+	}
+
+	goal_add_value = {
+		value = 100
+	}
+
+	progressbar = yes
+	
+	can_deactivate = no
+	should_be_pinned_by_default = yes
+}

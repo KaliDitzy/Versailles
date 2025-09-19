@@ -1,0 +1,88 @@
+﻿loser_versailles_status = {
+	group = treaty_of_versailles
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	scripted_button = tov_redupiate
+
+	immediate = {
+		c:GER = {
+			save_scope_as = versailles_loser
+		}
+	}
+
+	complete = {
+		any_country = {
+			filter = { has_variable = tov_manager }
+			count = all
+			custom_tooltip = {
+				text = versailles_forgiven_loser
+				has_variable = tov_relieved
+			}
+		}
+	}
+	on_complete = {
+		activate_law = law_type:law_national_militia
+	}
+
+	fail = {
+		OR = {
+			NOT = { has_law = law_type:law_disarmament }
+			NOT = { has_law = law_type:law_no_home_affairs }
+			is_at_war = yes
+		}
+	}
+	on_fail = {
+		every_country = {
+			set_variable = {
+				name = tov_invalid
+				value = yes
+			}
+		}
+		change_infamy = 15
+	}
+
+	invalid = {
+		has_variable = tov_invalid
+	}
+
+	on_yearly_pulse = {
+		effect = {
+			trigger_event = treaty_of_versailles.1
+		}
+	}
+	
+	can_deactivate = no
+	should_be_pinned_by_default = yes
+}
+victor_versailles_status = {
+	group = treaty_of_versailles
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	scripted_button = tov_relieve_obligations
+
+	immediate = {
+		c:GER = {
+			save_scope_as = versailles_loser
+		}
+	}
+
+	fail = {
+		OR = {
+			custom_tooltip = {
+				text = versailles_forgiven_loser
+				hidden_trigger = { has_variable = tov_relieved }
+			}
+			custom_tooltip = {
+				text = versailles_broken
+				any_country = {
+					has_variable = tov_invalid
+				}
+			}
+		}
+	}
+	
+	can_deactivate = no
+	should_be_pinned_by_default = yes
+}

@@ -1,0 +1,20 @@
+﻿COUNTRIES = {
+	c:AUS ?= {
+		# set_next_election_date = ???
+		
+		effect_starting_technology_tier_2_tech = yes
+		
+		effect_starting_parliamentary_democracy = yes
+		activate_law = law_type:law_disarmament
+
+		ig:ig_petty_bourgeoisie = {
+			add_ruling_interest_group = yes
+		}
+		add_taxed_goods = g:grain
+
+		add_modifier = {
+			name = rising_national_socialist_party
+			years = 10
+		}
+	}
+}

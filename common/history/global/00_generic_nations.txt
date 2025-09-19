@@ -1,0 +1,20 @@
+GLOBAL = {
+	every_country = { #generic politics for nations i havent got to yet
+		if = {
+			limit = {
+				NOT = {
+					THIS = c:AUS
+					THIS = c:CAN
+					THIS = c:GER
+					THIS = c:POL
+					THIS = c:RUS
+					THIS = c:TUR
+					THIS = c:GBR
+					THIS = c:FRA
+					THIS = c:ITA
+				}
+			}
+			effect_starting_generic_politics = yes
+		}
+	}
+}

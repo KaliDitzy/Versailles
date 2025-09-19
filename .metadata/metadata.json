@@ -1,0 +1,17 @@
+{
+  "name" : "Versailles",
+	"id" : "",
+  "version" : "1.0.0",
+  "supported_game_version" : "1.9.8",
+  "short_description" : "Enabling Act",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true,
+    "replace_paths": [
+      "common/decisions",
+      "common/journal_entries",
+      "events"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+﻿COUNTRIES = {
+	c:FRA ?= {
+		effect_starting_technology_tier_1_tech = yes
+		
+		# Laws
+		effect_starting_parliamentary_democracy = yes
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+
+		set_variable = {
+			name = tov_manager
+			value = yes
+		}
+
+		add_journal_entry = {
+			type = victor_versailles_status
+		}
+	}
+}

@@ -1,0 +1,30 @@
+﻿DIPLOMACY = {
+	c:RUS ?= {
+		create_diplomatic_pact = {
+			country = c:FIN
+			type = rivalry
+		}
+		create_diplomatic_pact = {
+			country = c:POL
+			type = rivalry
+		}
+		create_diplomatic_pact = {
+			country = c:JAP
+			type = rivalry
+		}
+	}
+	c:JAP ?= {
+		create_diplomatic_pact = {
+			country = c:CHI
+			type = rivalry
+		}
+		create_diplomatic_pact = {
+			country = c:RUS
+			type = rivalry
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,14 @@
+﻿COUNTRIES = {
+	c:CAN ?= {
+		# set_next_election_date = ???
+		
+		effect_starting_technology_tier_2_tech = yes
+		
+		effect_starting_parliamentary_democracy = yes
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+		add_taxed_goods = g:grain
+	}
+}

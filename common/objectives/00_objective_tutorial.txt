@@ -1,0 +1,18 @@
+﻿objective_tutorial = {
+	enabled_background = "gfx/interface/icons/objectives/learn.dds"
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+
+	recommended_tags = { HUN ROM TUR }
+	recommended_game_rules = { lenient_ai_behavior low_ai_aggression loyalties_grace_period_long }
+
+	objective_subgoals = {
+		sg_improve_rank
+	}
+
+	final_subgoal = sg_improve_rank
+
+	on_start = {
+		# start_research_random_technology = yes
+		# start_tutorial_lesson = { tutorial_lesson = lesson_basics }
+	}
+}

@@ -1,0 +1,2 @@
+﻿l_english:
+  TOP_BAR_VERSION: "Versailles Version: Cradle (alpha)\nGame Version: [GetGameVersionInfo]\nMP Checksum: [GetMPChecksum|V] $MODIFIED_CHECKSUM$ [GetRandomLogInfo]"

@@ -1,0 +1,28 @@
+CHARACTERS = {
+	c:GER ?= {
+		create_character = {
+			first_name = Heinrich
+			last_name = Bruning
+			historical = yes
+			culture = north_german
+			age = 44
+			
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_populist
+			traits = {}
+		}
+		create_character = {
+			first_name = Adolf
+			last_name = Hitler
+			historical = yes
+			culture = south_german
+			age = 40
+			
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_fascist
+			traits = {}
+		}
+	}
+}

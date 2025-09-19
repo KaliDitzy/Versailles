@@ -1,0 +1,12 @@
+namespace = technical_events
+
+technical_events.1 = { # decide which country is being voted on
+    type = country_event
+
+    hidden = yes
+
+    immediate = {
+        # check if there is any countries that wanna get in
+        # if not, then just stop votes
+    }
+}

@@ -1,0 +1,8 @@
+﻿COUNTRIES = {
+	c:TUV ?= {
+		effect_starting_technology_tier_3_tech = yes
+
+		# Laws
+		effect_starting_communist = yes
+	}
+}
